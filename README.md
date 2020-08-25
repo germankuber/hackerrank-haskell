@@ -11,3 +11,6 @@ https://www.hackerrank.com/challenges/time-conversion
 
 ## 04 - Palindrome Index
 https://www.hackerrank.com/challenges/palindrome-index
+
+## 05 - 2D Array - DS
+https://www.hackerrank.com/challenges/2d-array
