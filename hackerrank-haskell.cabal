@@ -26,7 +26,6 @@ source-repository head
 library
   exposed-modules:
       Lib
-      Test
   other-modules:
       Paths_hackerrank_haskell
   hs-source-dirs:
