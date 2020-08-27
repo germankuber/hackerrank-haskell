@@ -1,0 +1,1 @@
+aVeryBigSum list = foldl (\acc x -> acc + x) 0 list

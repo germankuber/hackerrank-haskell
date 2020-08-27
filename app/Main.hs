@@ -1,6 +1,5 @@
 module Main where
 
-import Lib
 
 main :: IO ()
 main = putStrLn $ kangaroo 0 3 4 2

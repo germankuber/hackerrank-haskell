@@ -22,9 +22,13 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - time
+- process
+- mtl
+
 
 library:
-  source-dirs: src
+  hs-source-dirs: 
+    src/
 
 executables:
   hackerrank-haskell-exe:
@@ -34,16 +38,26 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -Wall 
+    - -Wcompat 
+    - -Wincomplete-record-updates 
+    - -Wincomplete-uni-patterns 
+    - -Wredundant-constraints
     dependencies:
     - hackerrank-haskell
 
 tests:
   hackerrank-haskell-test:
-    main:                Spec.hs
+    main:                12-Electronics-Shop-Spec.hs
     source-dirs:         test
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -main-is Spec
+    build-dependencies:
+    - Electronic
     dependencies:
     - hackerrank-haskell
+    - hspec
+    - QuickCheck  
